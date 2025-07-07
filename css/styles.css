@@ -104,13 +104,14 @@ ul {
 
 /* Main content */
 /* Section solutions */
-.section-solution {
+.section-hero {
   margin: 0 auto;
   background: #2e2f42;
   padding: 188px 0;
+  background-image: url(../images/people-office.jpg);
 }
 
-.section-title-solution {
+.section-title-hero {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07143;
