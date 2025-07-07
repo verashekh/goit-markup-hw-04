@@ -106,9 +106,11 @@ ul {
 /* Section solutions */
 .section-hero {
   margin: 0 auto;
-  background: #2e2f42;
   padding: 188px 0;
-  background-image: url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-title-hero {
