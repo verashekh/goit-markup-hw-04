@@ -155,7 +155,16 @@ ul {
   margin: 0 auto;
   padding: 120px 0;
 }
-
+.container-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+.icon {
+}
 .visually-hidden {
   position: absolute;
   overflow: hidden;
