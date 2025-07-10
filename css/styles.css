@@ -103,7 +103,7 @@ ul {
 }
 
 /* Main content */
-/* Section solutions */
+/* Section hero */
 .section-hero {
   margin: 0 auto;
   padding: 188px 0;
@@ -162,8 +162,13 @@ ul {
   height: 112px;
   background: #f4f4fd;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon {
+  display: block;
+  margin: 24px 100px;
 }
 .visually-hidden {
   position: absolute;
@@ -255,6 +260,22 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.container-social-media-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  justify-content: space-between;
+}
+
+.media {
+  display: flax;
+  gap: 24px;
+  fill: #4d5ae5;
+  background: #fff;
 }
 
 /* Our portfolio */
@@ -330,4 +351,18 @@ ul {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.container-footer {
+  display: flex;
+}
+.container-media-footer {
+  padding-left: 120px;
 }
