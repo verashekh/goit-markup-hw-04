@@ -169,6 +169,7 @@ ul {
 .icon {
   display: block;
   margin: 24px 100px;
+  fill: #2e2f42;
 }
 .visually-hidden {
   position: absolute;
