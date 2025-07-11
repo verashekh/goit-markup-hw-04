@@ -264,19 +264,28 @@ ul {
   margin-bottom: 8px;
 }
 
-.container-social-media-icon {
+.social-media-icon {
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 16px;
-  justify-content: space-between;
+  fill: #4d5ae5;
 }
 
 .media {
-  display: flax;
-  gap: 24px;
+  background-color: #fff;
   fill: #4d5ae5;
-  background: #fff;
+}
+.icon-facebook-icon path:first-of-type {
+  fill: #1877f2;
+}
+.icon-facebook-icon path:last-of-type {
+  fill: #fff;
 }
 
 /* Our portfolio */
