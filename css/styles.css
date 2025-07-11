@@ -279,13 +279,6 @@ ul {
 
 .media {
   background-color: #fff;
-  fill: #4d5ae5;
-}
-.icon-facebook-icon path:first-of-type {
-  fill: #1877f2;
-}
-.icon-facebook-icon path:last-of-type {
-  fill: #fff;
 }
 
 /* Our portfolio */
