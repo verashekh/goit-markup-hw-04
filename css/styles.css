@@ -59,7 +59,22 @@ ul {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
+.list.active {
+  color: #404bbf;
+}
+.list.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .list:hover {
   color: #404bbf;
 }
@@ -78,7 +93,22 @@ ul {
   color: #434455;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
+.lincs.active {
+  color: #404bbf;
+}
+.links.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .links:hover {
   color: #404bbf;
 }
@@ -110,9 +140,8 @@ ul {
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
 .container-hero {
   width: 1440px;
 }
