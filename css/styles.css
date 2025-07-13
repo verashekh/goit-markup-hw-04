@@ -140,12 +140,12 @@ ul {
 .section-hero {
   margin: 0 auto;
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office.jpg);
-}
-
-.container-hero {
-  width: 1440px;
 }
 
 .section-title-hero {
@@ -176,6 +176,7 @@ ul {
   min-width: 169px;
   height: 56px;
   margin: 48px auto;
+  transition: background 250ms ease-in-out 0ms;
 }
 
 .order-service-btn:hover {
@@ -312,6 +313,10 @@ ul {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: background-color 250ms ease-in-out 0ms;
+}
+.media-icon:hover {
+  background-color: #fff;
 }
 
 .media {
@@ -319,6 +324,10 @@ ul {
   justify-content: space-between;
   gap: 48px;
   margin: 12px;
+  transition: color 250ms ease-in-out 0ms;
+}
+.media:hover {
+  fill: #4d5ae5;
 }
 
 /* Our portfolio */
@@ -361,11 +370,38 @@ ul {
 }
 .portfolio-cards {
   width: calc((100% - 48px) / 3);
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: box-shadow 250ms ease-in-out 0ms;
 }
 .portfolio-cards:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 300px;
+  background-color: #4d5ae5;
+  transform: translatey(150%);
+  transition: transform 250ms ease-in-out;
+}
+
+.portfolio-cards:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay p {
+  color: #fff;
+  padding: 40px 32px 64px 32px;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
 
 /* Footer */
@@ -431,6 +467,10 @@ ul {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: background-color 250ms ease-in-out 0ms;
+}
+.media-icon-footer:hover {
+  background-color: #fff;
 }
 
 .media-footer {
@@ -438,4 +478,8 @@ ul {
   justify-content: space-between;
   gap: 32px;
   margin: 8px;
+  transition: color 250ms ease-in-out 0ms;
+}
+.media-footer:hover {
+  fill: #4d5ae5;
 }
